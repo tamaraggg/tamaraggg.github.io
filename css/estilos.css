@@ -1,0 +1,294 @@
+/*CSS COMÚN Y DE LA PÁGINA DE INICIO*/
+*{
+    box-sizing: border-box;   
+}
+
+@font-face {
+    font-family: 'Giaza';
+    src: url('Giaza.otf') format('opentype'); 
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  .cuerpoPrincipal strong {
+    color: #D4007F;
+  }
+
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;    
+}
+
+header{
+    width: 100%;
+    background-color: #F6BCD5;
+    color: whitesmoke;
+    font-family: Giaza;
+    display: flex;
+    justify-content: space-around;   
+}
+
+header h3 {
+    border-radius: 25px;
+    background-color: #311526;
+    font-size: 1.5em;
+    width: auto;
+    padding: 10px;
+}
+
+header img {
+    width: 300px;
+}
+
+.stick {
+    width: 100%;    
+    position: sticky;
+    top:0;
+    z-index: 100;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D4007F;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 50px;    
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+nav a:hover{
+    background-color: #F6BCD5;
+    color: black;
+    border-radius: 25px;  
+}
+
+.cuerpoPrincipal {       
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    font-family: Verdana, sans-serif;
+}
+
+h1 img {
+    width: 20px;
+}
+h1 {
+    margin-left: 25px;
+}
+
+section{
+    width: 65%;
+}
+
+article {
+    background-color: #ffeeff;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    text-align: justify;
+}
+
+.krash-rules {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.krash-rules img {
+    width: 30%;
+}
+
+#ceo{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#ceo img {
+    width: 35%;
+}
+
+article:nth-of-type(3) img{    
+    border-radius: 25px;
+    margin-left: 10%;
+}
+
+article h4{
+    color: #D4007F;
+    font-size: 1.5em;
+}
+
+span{
+    color:#D4007F;
+}
+
+.iconos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.iconos img {
+    width: 15%;
+}
+
+aside{
+    width: 30%;
+    background-color: #F6BCD5;    
+}
+
+aside div {
+    display: flex;
+    flex-wrap: wrap;   
+    justify-content: center;    
+}
+
+aside div img{    
+    width: 90%;
+    border-radius: 25px;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+aside div p {
+    color: white;
+    font-size: 2.5em;
+    margin-top: 150px;
+    margin-bottom: 50px;
+    font-family: Giaza;
+    background-color: #311526;
+    border-radius: 25px;
+    padding: 5px;
+    text-align: center; 
+    width: 90%; 
+}
+
+aside div iframe{
+    width: 80%;
+    margin-top: 150px;
+    margin-bottom: 50px;
+}
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D4007F;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;    
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+footer div {
+    margin: 10px;
+}
+
+footer a:hover{
+    background-color: #F6BCD5;
+    color: black;
+    border-radius: 25px;
+}
+
+footer img {
+    border-radius: 25px;
+}
+
+/*AQUÍ COMIENZA EL CSS QUE ES EXCLUSIVO DE LA PÁGINA CATALOGO.HTML*/
+
+h1 {
+    font-family: Giaza;
+    color: #311526;
+    font-size: 2.5em;
+    margin-left: 20%;
+}
+
+.productos {
+    display: grid;
+    grid-template-rows: 200px 200px 200px 200px 200px 200px;
+    grid-template-columns: 500px 500px 500px;
+    grid-row-gap: 1em;
+    width: 90%;
+    margin: 5px auto;
+    align-items: center;
+    font-family: Verdana, sans-serif;
+}
+
+.productos div {
+    width: 90%;
+    border: 0.5px solid #D4007F;
+    border-radius: 25px;
+    text-align: justify;
+    padding: 1em;
+    background-color: #ffeeff;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;    
+}
+
+.productos div img {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.productos div h4 {
+    color: #D4007F;
+    text-align: center;
+}
+
+#toDieFor {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    margin-top: 25px;
+}
+
+#gloss {
+    grid-column: 1/2;
+    grid-row: 3/5;
+}
+
+#esponja {
+    grid-column: 3/4;
+    grid-row: 3/5; 
+}
+
+#claudia {
+    grid-column: 2/3;
+    grid-row: 5/7;
+    margin-bottom: 50px;
+}
+
+/*AQUÍ COMIENZA EL CSS QUE ES EXCLUSIVO DE LA PÁGINA SERVICIOS.HTML*/
+
+#mapa iframe{
+    width: 90%;
+}
+
+#navidad img{
+    border-radius: 25px;
+    width: auto;
+    margin-left: 30%;
+}
+
+#adelanto {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;   
+}
+
+#adelanto img {
+    width: 35%;
+}
